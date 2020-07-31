@@ -11,10 +11,9 @@ $background-opacity: 0.9;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+      background:#000000;
+      background-attachment: fixed;
+      background-size: cover;
 
       &:after {
         content: '';
@@ -30,7 +29,6 @@ $background-opacity: 0.9;
     }
   }
 }
-
 
 // Media Query Mixins
 @mixin mediaSm {
