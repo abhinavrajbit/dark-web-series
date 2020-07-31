@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: rgb(15, 8, 8);
 $secondary-color: #e0751c;
 $show-home-image: true;
 $home-image: url(../img/netflix-dark.jpg);
@@ -12,8 +12,9 @@ $background-opacity: 0.9;
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 
       &:after {
         content: '';
@@ -25,6 +26,7 @@ $background-opacity: 0.9;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
+     
     }
   }
 }
@@ -32,19 +34,24 @@ $background-opacity: 0.9;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}
+@mixin mediaSm {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     @content;
   }
 }
