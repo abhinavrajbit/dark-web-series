@@ -1,0 +1,15 @@
+{
+  "name": "tiktok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Abhinav raj",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
+}

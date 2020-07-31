@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Dark Netflix</title>
+</head>
+<body id="bg-img">
+
+  <main id=home>
+    <h1 class="lg-heading">
+      T <span id="second">O</span> C K
+    </h1>
+    <script>var myvar =setInterval(myTimer,1500);
+    var flag =true;
+     function myTimer() {
+       if(flag){
+       document.getElementById("second").innerHTML= "I";
+       document.getElementById("second").style.color="#000000"
+       flag=false;
+       }
+       else{
+        document.getElementById("second").innerHTML= "O";
+        document.getElementById("second").style.color="#ff0000"
+       flag=true;
+       }
+     }
+    </script>
+  </main>
+  
+</body>
+</html>
