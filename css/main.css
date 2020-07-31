@@ -29,17 +29,16 @@
   box-sizing: border-box; }
 
 body {
-  background: url(../img/netflix-dark.jpg), #0f0808;
+  background: #000000, #0f0808;
   color: set-text-color(#0f0808);
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/netflix-dark.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
+    background: #000000;
+    background-attachment: fixed;
+    background-size: cover; }
     body#bg-img:after {
       content: '';
       position: absolute;
@@ -49,6 +48,12 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(15, 8, 8, 0.9); }
+
+.dark {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 2rem; }
 
 h1 {
   margin-top: 0;
